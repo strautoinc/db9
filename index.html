@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DB9 Logistics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header id="mainHeader">  
+      <nav class="nav-bar">
+      <div class="nav-left">
+        <img src="images/D.png" alt="DB9 Logo" class="logo-img" id="mainLogo">
+        <h2>LOGISTICS</h2>
+        </div>
+        <div class="burger" onclick="toggleMenu()">&#9776;</div>
+        <div class="nav-right">
+           <div class="dropdown">
+          <button class="dropbtn">Why Choose Us</button>
+          <div class="dropdown-content">
+            <a href="#who-we-are">Who We Are</a>
+            <a href="#">Our Mission</a>
+            <a href="#">Safety</a>
+            <a href="#">FAQs</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Individuals</button>
+          <div class="dropdown-content">
+              <a href="#">Door-to-Door Transport</a>  
+              <a href="#">Open Transport</a>
+              <a href="#">Enclosed Transport</a>
+              <a href="#">Cost</a>
+            </div>
+        </div>
+        <div class="dropdown">  
+            <button class="dropbtn">Partnerships</button>
+            <div class="dropdown-content">
+              <a href="#">Carrier Partnerships</a>
+              <a href="#">Dealer Partnerships</a>
+              <a href="#">Auction Partnerships</a>
+            </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Transport Options</button>
+          <div class="dropdown-content">
+            <a href="#">Door-to-Door</a>
+            <a href="#">Open Transport</a>
+            <a href="#">Enclosed Transport</a>
+            <a href="#">Cost</a>
+          </div>
+        </div>   
+</nav>
+
+  </header>
+  <!-- Hero Section -->
+  <section id="hero" class="fade-in">
+    <div class="hero-overlay">
+      <h1>Request a Quote</h1>
+      <p>Fill out the form below to get a personalized quote for your vehicle transport needs.</p>
+      <!-- Order Form -->
+      <form class="order-form">
+        <div class="form-row">
+          <input type="text" placeholder="Pickup Location" required />
+          <input type="date" placeholder="Pickup Date" required />
+        </div>
+        <div class="form-row">
+          <input type="text" placeholder="Delivery Location" required />
+          <input type="date" placeholder="Delivery Date" required />
+        </div>
+        <div class="form-row">
+        <select>
+          <option value="" disabled selected>Select Transport Type</option>
+          <option value="open">Open Transport</option>
+          <option value="enclosed">Enclosed Transport</option>
+        </select>
+        <select>
+          <option value="" disabled selected>Select Vehicle Type</option>
+          <option value="car">Car</option>
+          <option value="truck">Truck</option>
+          <option value="motorcycle">Motorcycle</option>
+          <option value="SUV">SUV</option>
+          <option value="van">Van</option>
+          <option value="other">Other</option>
+        </select>   
+        </div>
+        <div class="form-row">
+        <input type="text" placeholder="Vehicle Year, Make, Model" required />     
+        <select>
+          <option value="" disabled selected>Vehicle Condition</option>
+          <option value="Operable">Operable</option>
+          <option value="Inoperable">Inoperable</option>
+        </select>
+        </div>
+        <div class="form-row">
+        <input type="phone" placeholder="Your Phone" required />
+        <input type="email" placeholder="Your Email" required />
+        </div>
+        <textarea rows="4" placeholder="Additional Info (optional)"></textarea>
+        <div class="checkbox-container">
+          <input type="checkbox" id="terms" required />
+          <label for="terms">By clicking this box, you agree to receive text messages from DB9 Logistics at the phone number provided above. I understand messages frequency may vary based on user interaction. Data rates may apply <a href="#terms">Terms and Conditions.</a></label>
+        </div>
+        <button type="submit">SUBMIT</button>
+      </form>
+    </div>
+    <div class="hero-content">
+    <h1>Vehicle Transport You Can Count On</h1>
+    <p>Nationwide shipping for individuals, dealerships, auctions, and more — handled with precision and care.</p>
+     </div>
+ </section>
+
+  <!-- Why Choose Us Section (optional for now) -->
+  <!-- <section id="why-us">...</section> -->
+
+  <!-- Carrier Modal -->
+  <div id="carrierModal" class="modal-overlay">
+    <div class="modal-content">
+      <span class="close-btn" onclick="toggleCarrierForm()">&times;</span>
+      <h2>Become a Carrier</h2>
+      <form class="carrier-form">
+        <input type="text" placeholder="Company Name" required />
+        <input type="text" placeholder="MC Number" required />
+        <input type="text" placeholder="Phone Number" required />
+        <input type="email" placeholder="Email Address" required />
+        <textarea placeholder="Additional Info" rows="4"></textarea>
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+  </div>
+<!-- Who We Are Section -->
+<section id="who-we-are" class="fade-in">
+      <h2>Who We Are</h2>
+      <div class="who-container">
+    <div class="who-image">
+      <img src="images/2017-ford-super-duty-letters-chrome__64381.1559802390.jpg" alt="DB9 Logistics" />
+      <img src="images/2024-Ford-F-250-5-of-15.jpg" alt="DB9 Logistics" />
+      <img src="images/AdobeStock_908406391_Preview.jpeg" alt="DB9 Logistics" />
+    </div>
+      <div class="who-text">
+        <p>
+          DB9 Logistics is a vehicle transport brokerage company built on integrity, precision, and dependability. We partner with top-rated carriers across the country, offering services to dealerships, auctions, rental agencies, and private individuals. Our reputation comes from staying proactive, transparent, and on top of every single shipment.
+        </p>
+    </div>
+      </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <!-- <section id="testimonials" class="fade-in">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-box">
+          <p>"DB9 handled everything like pros. Fast communication, smooth delivery. 10/10!"</p>
+          <span>— Jessica R., Dealership Manager</span>
+        </div>
+        <div class="testimonial-box">
+          <p>"I’ve used dozens of brokers. None have matched the consistency and care of DB9."</p>
+          <span>— Mark P., Auction Coordinator</span>
+        </div>
+        <div class="testimonial-box">
+          <p>"Honestly, I was surprised how easy they made it. Picked up on time, delivered early."</p>
+          <span>— Sara T., Private Customer</span>
+        </div>
+      </div>
+    </section> -->
+    
+    <!-- Contact Section -->
+<section id="contact" class="fade-in">
+    <h2>Contact Us</h2>
+    <div class="contact-container">
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="phone" placeholder="Your Phone" required />
+      <input type="email" placeholder="Your Email" required />
+      <select>
+        <option value="" disabled selected>Select Inquiry Type</option>
+        <option value="quote">Quote Request</option>
+        <option value="billing">Billing Inquiry</option>
+        <option value="carrier">Carrier Application</option>
+        <option value="general">General Inquiry</option>
+        <option value="support">Support</option>
+        <option value="other">Other</option>
+      </select>
+      <input type="text" placeholder="Subject" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">SUBMIT</button>
+    </form>
+    
+
+  </section>
+  
+  <!-- FAQ Section -->
+  <section id="faq" class="fade-in">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <h3>How long does it take to transport a vehicle?</h3>
+        <p>Most deliveries are completed within 3–7 business days, depending on the distance and route availability.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do I need to be present for pickup or delivery?</h3>
+        <p>Yes, either you or a designated person must be present to sign off at pickup and delivery locations.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What types of vehicles do you transport?</h3>
+        <p>We handle cars, SUVs, trucks, motorcycles, and even specialty vehicles—open or enclosed transport.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is my vehicle insured during transport?</h3>
+        <p>Yes. All our partner carriers are fully insured and compliant with federal DOT regulations.</p>
+      </div>
+    </div>
+  </section>
+    
+
+<!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-info">
+ 
+  <p><strong>USDOT:</strong> &nbsp 4386960 </p>
+  <p><strong>MC:</strong> &nbsp  1720504</p>
+  <p><strong>Phone:</strong> &nbsp (561)321-2756</p>
+  <p><strong>Email:</strong> &nbsp db9logistics@gmail.com</p>
+   <div class="fmcsa-logo">
+    <img src="images/fm.png" alt="FMCSA Logo" width="50px"/>
+  </div>
+</div>
+
+<div class="footer-links">
+<a href="#who-we-are">Who We Are</a>
+<a href="#individuals">Individuals</a>
+<a href="#partnerships">Partnerships</a>
+<a href="#transport-options">Transport Options</a>
+<a href="#faq">FAQs</a>
+<a href="#contact">Contact Us</a>
+</div>
+</div>
+  <p class="copyright">© 2025 DB9 Logistics. All rights reserved.</p>
+  <div class="terms">
+    <a href="#terms">Terms and Conditions</a> |
+    <a href="#privacy">Privacy Policy</a>
+  </div>
+</footer>
+<button id="scrollUpBtn" onclick="scrollToTop()"> 
+  <img src="images/up.png" class="up-arrow" width="50px">
+  </button>
+</body>
+</html>
