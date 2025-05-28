@@ -691,11 +691,7 @@ textarea {
   right: 20px;
   padding: 10px;
   cursor: pointer;
-  background-color: #f0f0f085;
-  border-radius: 50%;
   border: none;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  transition: opacity 0.3s ease, visibility 0.3s ease;
   z-index: 1000;
 }
 
@@ -704,11 +700,6 @@ textarea {
   visibility: visible;
 }
 
-#scrollUpBtn:hover {
-  background-color: #f0f0f0;
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
 
 /* FOOTER */
 footer {
