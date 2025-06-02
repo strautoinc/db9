@@ -84,3 +84,23 @@ const openBtn = document.getElementById('open-quote-modal');
     modal.style.display = 'none';
     overlay.style.display = 'none';
   });
+
+    const openModalBtn = document.getElementById('open-safety-modal');
+    const closeModalBtn = document.getElementById('close-safety-modal');
+    const sModal = document.getElementById('safety-modal');
+    const sOverlay = document.getElementById('modal-overlay');
+
+  openModalBtn.addEventListener('click', () => {
+    sModal.style.display = 'block';
+    sOverlay.style.display = 'block';
+  });
+
+  closeModalBtn.addEventListener('click', () => {
+    sModal.style.display = 'none';
+    sOverlay.style.display = 'none';
+  });
+
+  sOverlay.addEventListener('click', () => {
+    sModal.style.display = 'none';
+    sOverlay.style.display = 'none';
+  });

@@ -11,7 +11,7 @@
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <script defer src="script.js"></script>
 </head>
-<body>
+<body class="safety-page">
   <header id="mainHeader">  
       <nav class="nav-bar">
       <div class="nav-left">
@@ -49,27 +49,141 @@
 </nav>
 
   </header>
+  <section id="safety-hero" class="fade-in shrink">
+    <div class="hero-overlay">
+      <h2>Safety First</h2>
+      <p>We do all the work to maintain the safest environment for our clients, partners, employees and the public, so you can focus on what matters most.</p>
+      <p>We partner exclusively with trusted carriers who share our commitment to safety.</p>
+    </div>
+  </section>
 
-<div class="container">
-  <h1>Safety is Our Top Priority</h1>
-  <p>At DB9 Logistics, safety is not just a policy; it's a culture that is deeply ingrained in every aspect of our operations. We are committed to providing a safe and secure environment for our employees, clients, and the public.</p>
+  <main>
+    <section class="content-section">
+      <h1>Our Commitment to Safety</h1>
+      <p>At DB9 Logistics, safety is our top priority. We understand that transporting vehicles involves risks, and we take every precaution to ensure the safety of your vehicle and our team.</p>
+      <p>We adhere to strict safety protocols, including regular vehicle inspections, driver training, and compliance with all transportation regulations.</p>
+      <p>Our carriers are fully insured and licensed, providing you with peace of mind throughout the transport process.</p>
+    </section>
+    <section class="safety-steps">
+      <h2>Safety Steps We Take</h2>
+      <ul>
+        <li>Thorough background checks for all carriers</li>
+        <li>Regular vehicle maintenance and inspections</li>
+        <li>Comprehensive insurance coverage for all transports</li>
+        <li>Real-time tracking of your vehicle during transport</li>
+        <li>24/7 customer support for any safety concerns</li>
+      </ul>
+      <p>We believe that transparency is key to safety. That's why we provide you with access to all transport documentation, including inspection reports and insurance certificates.</p>
+      <img src="images/AdobeStock_289404601-1920w.jpeg" alt="Safety Checklist" class="safety-image" width="800px"/>
+    </section>
 
-  <h2>Our Safety Commitment</h2>
+<section class="carrier-compliance">
+  <h2>Carrier Safety & Compliance Standards</h2>
+  <p>
+    At DB9 Logistics, we only work with FMCSA-registered and fully insured carriers who meet our strict safety criteria. We regularly audit our carrier network to ensure:
+  </p>
   <ul>
-    <li><strong>Compliance:</strong> We strictly adhere to all federal, state, and local safety regulations and standards.</li>
-    <li><strong>Training:</strong> We provide comprehensive safety training to all our employees, ensuring they are equipped with the knowledge and skills to perform their duties safely.</li>
-    <li><strong>Equipment Maintenance:</strong> Our fleet is regularly inspected and maintained to ensure it is in optimal working condition, reducing the risk of mechanical failures.</li>
-    <li><strong>Risk Assessment:</strong> We conduct thorough risk assessments for all our operations and implement measures to mitigate potential hazards.</li>
-    <li><strong>Continuous Improvement:</strong> We are constantly reviewing and improving our safety protocols and procedures to stay ahead of potential risks.</li>
-    <li><strong>Emergency Preparedness:</strong> We have robust emergency response plans in place to handle any unforeseen incidents effectively.</li>
+    <li>Valid DOT and MC numbers</li>
+    <li>Active insurance on file (cargo + liability)</li>
+    <li>Consistent on-time delivery records</li>
+    <li>No major safety violations on file</li>
+    <li>Experienced and verified drivers</li>
   </ul>
+  <p>
+    We also require all carriers to complete a safety training program before they can accept loads through our platform.
+  </p>
+  <img src="images/dot-inspection-checklist.jpg" alt="Safety Compliance" class="safety-image" />
+</section>
 
-  <h2>Our Safety Record</h2>
-  <p>We are proud of our excellent safety record, which is a testament to our unwavering commitment to safety. We strive for zero incidents and work tirelessly to maintain a safe workplace for everyone.</p>
+<section class="tech-monitoring">
+  <h2>Technology & Real-Time Monitoring</h2>
+  <p>
+    We use advanced technology to track every vehicle during transport and reduce risks on the road:
+  </p>
+  <ul>
+    <li>GPS-enabled vehicle tracking</li>
+    <li>Driver & carrier compliance checks before dispatch</li>
+    <li>Real-time delivery status updates</li>
+    <li>Digital logs and inspection reports</li>
+    <li>Secure client access to documentation</li>
+  </ul>
+  <p>
+    Our platform allows you to monitor your vehicle's journey in real-time, providing transparency and peace of mind.
+  </p>
+  <img src="images/c9c1defbc06d0777d8c26b7b90bf73d0.jpg" alt="Real-Time Tracking" class="safety-image" />
+</section>
+    <section class="safety-tips">
+      <h2>Safety Tips for Vehicle Owners</h2>
+      <ul>
+        <li>Remove all personal items from your vehicle before transport.</li>
+        <li>Document the condition of your vehicle with photos before pickup.</li>
+        <li>Ensure your vehicle is in good working condition (e.g., no leaks, sufficient fuel).</li>
+        <li>Communicate any special instructions to your carrier.</li>
+        <li>Keep a copy of your transport agreement and contact information handy.</li>
+      </ul>
+      <p>By following these tips, you can help ensure a smooth and safe transport experience.</p>
+      <img src="images/safe.png" alt="Safety Tips" class="safety-image" width="600px"/>
+    </section>
 
-  <h2>Contact Us</h2>
-  <p>If you have any questions or concerns regarding our safety practices, please do not hesitate to <a href="contact.html">contact us</a>.</p>
+<section class="report-safety">
+  <h2>Have a Concern?</h2><br>
+  <p>We take safety seriously and encourage you to report any concerns or issues you may have experienced during the transport process.</p>
+  <p>If you've witnessed or experienced a safety issue, let us know. Your input helps us maintain the highest standards.</p><br>
+  <button id="open-safety-modal" class="safety-report-button">Report a Safety Concern</button><br><br>
+</section>
+
+<div id="modal-overlay"></div>
+
+<div id="safety-modal" class="safety-modal">
+  <button id="close-safety-modal" class="modal-close">&times;</button>
+  <h3>Report a Safety Concern</h3>
+  <form id="safety-form">
+    <label for="name">Your Name (optional):</label><br />
+    <input type="text" id="name" name="name"><br /><br />
+
+    <label for="email">Email (optional):</label><br />
+    <input type="email" id="email" name="email"><br /><br />
+
+    <label for="issue">Describe the Concern:</label><br />
+    <textarea id="issue" name="issue" rows="5" required></textarea><br /><br />
+
+    <button type="submit" class="safety-submit">Submit Report</button>
+  </form>
 </div>
+
+    </main>
+
+
+
+<footer class="last">
+  <div class="footer-content">
+     <div class="fmcsa-logo">
+    <img src="images/fm.png" alt="FMCSA Logo" width="50px"/>
+  </div>
+    <div class="footer-info">
+  <p><strong>USDOT:</strong> &nbsp 4386960 </p>
+  <p><strong>MC:</strong> &nbsp  1720504</p>
+  <p><strong>Phone:</strong> &nbsp (561)321-2756</p>
+  <p><strong>Email:</strong> &nbsp db9logistics@gmail.com</p>
+  </div>
+
+<div class="footer-links">
+<a href="#who-we-are">Who We Are</a>
+<a href="#individuals">Individuals</a>
+<a href="#partnerships">Partnerships</a>
+<a href="#faq">FAQs</a>
+<a href="#contact">Contact Us</a>
+</div>
+</div>
+  <p class="copyright">© 2025 DB9 Logistics. All rights reserved.</p>
+  <div class="terms">
+    <a href="#terms">Terms and Conditions</a> |
+    <a href="#privacy">Privacy Policy</a>
+  </div>
+</footer>
+<button id="scrollUpBtn" onclick="scrollToTop()"> 
+  <img src="images/up.png" class="up-arrow" width="40px">
+  </button>
 
 </body>
 </html>
