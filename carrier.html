@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DB9 Logistics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header id="mainHeader">  
+      <nav class="nav-bar">
+      <div class="nav-left">
+        <a href="index.html"><img src="images/d.png" alt="DB9 Logo" class="logo-img" id="mainLogo"/> </a>
+        <h2>LOGISTICS</h2>
+        </div>
+        <div class="burger" onclick="toggleMenu()">&#9776;</div>
+        <div class="nav-right">
+           <div class="dropdown">
+          <button class="dropbtn">Why Choose Us</button>
+          <div class="dropdown-content">
+            <a href="who.html">Who We Are</a>
+            <a href="mission.html">Our Mission</a>
+            <a href="safety.html">Safety</a>
+            <a href="faqs.html">FAQs</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Individuals</button>
+          <div class="dropdown-content">
+              <a href="#">Door-to-Door Transport</a>  
+              <a href="#">Open Transport</a>
+              <a href="#">Enclosed Transport</a>
+              <a href="#">Cost</a>
+            </div>
+        </div>
+        <div class="dropdown">  
+            <button class="dropbtn">Partnerships</button>
+            <div class="dropdown-content">
+              <a href="carrier.html">Carrier Partnerships</a>
+              <a href="dealer.html">Dealer Partnerships</a>
+              <a href="auction.html">Auction Partnerships</a>
+            </div>
+        </div> 
+</nav>
+
+  </header>
+
+<div class="row">
+    <div class="main">
+        <h2>Why Partner with DB9?</h2>
+        <p>At DB9 Logistics, we value our carrier partners. We understand the challenges of the road and aim to make your experience as smooth and profitable as possible. Join our network and gain access to consistent freight, fair rates, and reliable payments.</p>
+
+        <h3>Benefits of Partnering:</h3>
+        <ul>
+            <li>Access to a wide network of shippers</li>
+            <li>Competitive rates for your services</li>
+            <li>Quick and reliable payment processing</li>
+            <li>Dedicated support team</li>
+            <li>Opportunities for long-term partnerships</li>
+        </ul>
+
+        <h2>How to Get Started:</h2>
+        <p>Becoming a carrier partner with DB9 Logistics is simple. Just follow these steps:</p>
+        <ol>
+            <li>Contact us through the form below or give us a call.</li>
+            <li>Provide us with your company information and required documents (insurance, operating authority, etc.).</li>
+            <li>Once approved, you'll gain access to our available loads.</li>
+            <li>Choose the loads that fit your routes and schedule.</li>
+            <li>Deliver the freight and get paid!</li>
+        </ol>
+
+        <h2>Carrier Application:</h2>
+        <p>Interested in becoming a carrier partner? Fill out the form below and we'll get back to you
+as soon as possible.</p>
+    </div>
+</div>
+<div class="form-container">
+    <form action="submit_carrier_application.php" method="post">
+        <label for="company_name">Company Name:</label>
+        <input type="text" id="company_name" name="company_name" required>
+
+        <label for="contact_name">Contact Name:</label>
+        <input type="text" id="contact_name" name="contact_name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="services">Services Offered:</label>
+        <textarea id="services" name="services" rows="4"></textarea>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</div>
+<div class="footer">
+    <p>&copy; 2025 DB9 Logistics. All rights reserved.</p>
+    <p>Follow us on:
+        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+    </p>
+</div>
+</div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/js/font-awesome.min.js"></script>
+
+</body>
+</html>

@@ -52,10 +52,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const header = document.getElementById("mainHeader");
-const hero = document.getElementById("hero");
+const shrink = document.getElementsByClassName("shrink");
 
 window.addEventListener("scroll", function () {
-  const triggerPoint = hero.offsetHeight / 5;
+  const triggerPoint = shrink[0].offsetHeight / 5;
 
   if (window.scrollY > triggerPoint) {
     header.classList.add("shrink");
@@ -65,3 +65,22 @@ window.addEventListener("scroll", function () {
 });
 
 
+const openBtn = document.getElementById('open-quote-modal');
+  const closeBtn = document.getElementById('close-quote-modal');
+  const modal = document.getElementById('quote-modal');
+  const overlay = document.getElementById('modal-overlay');
+
+  openBtn.addEventListener('click', () => {
+    modal.style.display = 'block';
+    overlay.style.display = 'block';
+  });
+
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+    overlay.style.display = 'none';
+  });
+
+  overlay.addEventListener('click', () => {
+    modal.style.display = 'none';
+    overlay.style.display = 'none';
+  });

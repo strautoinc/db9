@@ -15,7 +15,8 @@
   <header id="mainHeader">  
       <nav class="nav-bar">
       <div class="nav-left">
-        <img src="images/d.png" alt="DB9 Logo" class="logo-img" id="mainLogo">
+        
+        <a href="index.html"><img src="images/d.png" alt="DB9 Logo" class="logo-img" id="mainLogo"/> </a>
         <h2>LOGISTICS</h2>
         </div>
         <div class="burger" onclick="toggleMenu()">&#9776;</div>
@@ -23,10 +24,10 @@
            <div class="dropdown">
           <button class="dropbtn">Why Choose Us</button>
           <div class="dropdown-content">
-            <a href="#who-we-are">Who We Are</a>
-            <a href="#">Our Mission</a>
-            <a href="#">Safety</a>
-            <a href="#">FAQs</a>
+            <a href="who.html">Who We Are</a>
+            <a href="mission.html">Our Mission</a>
+            <a href="safety.html">Safety</a>
+            <a href="faqs.html">FAQs</a>
           </div>
         </div>
         <div class="dropdown">
@@ -41,17 +42,18 @@
         <div class="dropdown">  
             <button class="dropbtn">Partnerships</button>
             <div class="dropdown-content">
-              <a href="#">Carrier Partnerships</a>
-              <a href="#">Dealer Partnerships</a>
+              <a href="carrier.html">Carrier Partnerships</a>
+              <a href="dealer.html">Dealer Partnerships</a>
+              <a href="auction.html">Auction Partnerships</a>
             </div>
         </div> 
 </nav>
 
   </header>
   <!-- Hero Section -->
-  <section id="hero" class="fade-in">
+  <section id="hero" class="fade-in shrink">
     <div class="hero-overlay">
-      <h1>Request a Quote</h1>
+      <h2>Request a Quote</h2>
       <p>Fill out the form below to get a personalized quote for your vehicle transport needs.</p>
       <!-- Order Form -->
       <form class="order-form">
@@ -163,7 +165,7 @@
     </form>
   </section>
   <!-- FAQ Section -->
-  <section id="faq" class="fade-in">
+  <!-- <section id="faq" class="fade-in">
     <h2>Frequently Asked Questions</h2>
     <div class="faq-container">
       <div class="faq-item">
@@ -183,24 +185,24 @@
         <p>Yes. All our partner carriers are fully insured and compliant with federal DOT regulations.</p>
       </div>
     </div>
-  </section>
+  </section> -->
 <!-- Footer -->
-<footer>
+<footer class="last">
   <div class="footer-content">
+     <div class="fmcsa-logo">
+    <img src="images/fm.png" alt="FMCSA Logo" width="50px"/>
+  </div>
     <div class="footer-info">
   <p><strong>USDOT:</strong> &nbsp 4386960 </p>
   <p><strong>MC:</strong> &nbsp  1720504</p>
   <p><strong>Phone:</strong> &nbsp (561)321-2756</p>
   <p><strong>Email:</strong> &nbsp db9logistics@gmail.com</p>
-   <div class="fmcsa-logo">
-    <img src="images/fm.png" alt="FMCSA Logo" width="50px"/>
   </div>
-</div>
+
 <div class="footer-links">
 <a href="#who-we-are">Who We Are</a>
 <a href="#individuals">Individuals</a>
 <a href="#partnerships">Partnerships</a>
-<a href="#transport-options">Transport Options</a>
 <a href="#faq">FAQs</a>
 <a href="#contact">Contact Us</a>
 </div>
@@ -212,7 +214,7 @@
   </div>
 </footer>
 <button id="scrollUpBtn" onclick="scrollToTop()"> 
-  <img src="images/up.png" class="up-arrow" width="50px">
+  <img src="images/up.png" class="up-arrow" width="40px">
   </button>
 </body>
 </html>

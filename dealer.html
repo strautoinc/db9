@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DB9 Logistics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header id="mainHeader">  
+      <nav class="nav-bar">
+      <div class="nav-left">
+        <a href="index.html"><img src="images/d.png" alt="DB9 Logo" class="logo-img" id="mainLogo"/> </a>
+        <h2>LOGISTICS</h2>
+        </div>
+        <div class="burger" onclick="toggleMenu()">&#9776;</div>
+        <div class="nav-right">
+           <div class="dropdown">
+          <button class="dropbtn">Why Choose Us</button>
+          <div class="dropdown-content">
+            <a href="who.html">Who We Are</a>
+            <a href="mission.html">Our Mission</a>
+            <a href="safety.html">Safety</a>
+            <a href="faqs.html">FAQs</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Individuals</button>
+          <div class="dropdown-content">
+              <a href="#">Door-to-Door Transport</a>  
+              <a href="#">Open Transport</a>
+              <a href="#">Enclosed Transport</a>
+              <a href="#">Cost</a>
+            </div>
+        </div>
+        <div class="dropdown">  
+            <button class="dropbtn">Partnerships</button>
+            <div class="dropdown-content">
+              <a href="carrier.html">Carrier Partnerships</a>
+              <a href="dealer.html">Dealer Partnerships</a>
+              <a href="auction.html">Auction Partnerships</a>
+            </div>
+        </div> 
+</nav>
+
+  </header>
+
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="fleet.html">Fleet</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="active"><a href="dealer.html">Dealer Partnership</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="dealer-hero">
+            <div class ="container">
+                <h1>Dealer Partnership</h1>
+                <p>Join us in revolutionizing vehicle transport with our dealer partnership program.</p>
+                <a href="#contact-form" class="btn">Get Started</a>
+            </div>
+        </section>
+        <section class="dealer-benefits">
+            <div class="container">
+                <h2>Why Partner with DB9 Logistics?</h2>
+                <ul>
+                    <li><strong>Reliable Transport:</strong> We ensure your vehicles are transported safely and on time.</li>
+                    <li><strong>Competitive Rates:</strong> Enjoy competitive pricing tailored to your business needs.</li>
+                    <li><strong>Dedicated Support:</strong> Our team is here to assist you every step of the way.</li>
+                    <li><strong>Flexible Solutions:</strong> We offer a range of transport options to suit your requirements.</li>
+                </ul>
+            </div>
+        </section>  
+        <section class="dealer-steps">
+            <div class="container">
+                <h2>How It Works</h2>
+                <ol>
+                    <li><strong>Contact Us:</strong> Reach out to us to discuss your partnership needs.</li>
+                    <li><strong>Agreement:</strong> We'll draft a partnership agreement that suits both parties.</li>
+                    <li><strong>Transport Setup:</strong> We'll set up the logistics for transporting your vehicles.</li>
+                    <li><strong>Ongoing Support:</strong> Enjoy continuous support and updates on your shipments.</li>
+                </ol>
+            </div>
+        </section>
+        <section class="dealer-testimonials">
+            <div class="container">
+                <h2>What Our Partners Say</h2>
+                <div class="testimonial">
+                    <p>"DB9 Logistics has transformed our vehicle transport process. Their reliability and professionalism are unmatched!"</p>
+                    <cite>- John Doe, Auto Dealer</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"We couldn't be happier with our partnership with DB9. They handle everything seamlessly."</p>
+                    <cite>- Jane Smith, Car Dealership Owner</cite>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="contact-form" id="contact-form">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="submit_dealer_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 DB9 Logistics. All rights reserved.</p>
+            <ul class="social-media">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
