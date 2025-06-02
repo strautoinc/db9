@@ -6,6 +6,7 @@
 }
 
 body {
+  background-color: #7a8e89;
   margin: 0;
   padding: 0;
   font-family: "Oxanium", sans-serif;
@@ -55,7 +56,7 @@ a {
 
 /* Header */
 header {
-  padding: 20px 0;
+  /* padding: 20px 0; */
   background-blend-mode: overlay;
   background-color: #000000bc;
   position: fixed;
@@ -66,7 +67,6 @@ header {
 }
 
 header.shrink {
-  padding: 9px 0;
   transition: all 0.3s ease;
   border-bottom: none;
 }
@@ -82,14 +82,10 @@ header.shrink h2 {
 
 header.shrink .nav-right a {
   font-size: 0.9rem;
-  padding: 8px 12px;
-  border-radius: 3px;
 }
 
 header.shrink .nav-right {
   font-size: 0.9rem;
-  padding: 8px 12px;
-  border-radius: 3px;
 }
 
 /* The main container that holds both sides */
@@ -97,7 +93,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
+  padding: 5px 10px;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -341,11 +337,19 @@ button {
   position: relative;
   display: flex;
   align-items: center;
-  padding: 10px 30px;
+  justify-content: center;
+  flex-direction: row;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.316);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 0 30px;
 }
 
 .hero-overlay {
-  max-width: 450px;
   margin: 20px;
   padding: 15px;
   background-color: rgba(0, 0, 0, 0.498);
@@ -354,15 +358,11 @@ button {
   box-shadow: 0 5px 20px rgba(255, 255, 255, 0.316);
   text-align: center;
 }
-/* 
-.hero-overlay h1 {
-  font-size: 1.5rem;
-  color: #eaeaea;
-} */
 
 .hero-overlay p {
   font-size: 0.8rem;
   color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .hero-content {
@@ -373,7 +373,7 @@ button {
   justify-content: center;
   text-align: center;
   margin: 0 auto;
-  max-width: 1600px;
+  min-width: 750px;
   border-bottom: 1px solid #ffffff;
   border-top: 1px solid #ffffff;
   padding: 20px;
@@ -413,6 +413,8 @@ button {
   align-items: left;
   text-align: left;
   font-size: 5px;
+  margin: 10px 0;
+  padding: 5px;
 
 }
 
@@ -432,42 +434,48 @@ textarea {
   color: #222;
 }
 
-
-
-/* WHO WE ARE */
-#who-we-are {
-  background-color: rgba(7, 24, 15, 0.431);
-  background-blend-mode: overlay;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: #000000;
-  font-size: 1rem;
-  border-top: 1px solid #e2e2e2;
-  border-bottom: 1px solid #e2e2e2;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  /* padding: 0 30px; */
-  /* padding: 100px 30px; */
-  text-align: center;
-  border-top: 1px solid #e2e2e2;
-  border-bottom: 1px solid #e2e2e2;
+.order-form input:focus,
+.order-form textarea:focus,
+.order-form select:focus {
+  outline: 2px solid #068252;
+  outline-offset: 4px;
+  transition: outline 0.3s ease;
+  box-shadow: 0 0 5px rgba(6, 130, 82, 0.5);
 }
 
+.order-form input:focus:not(:focus-visible) {
+  outline: none;
+}
 
+.order-form input:focus-visible {
+  outline: 2px solid #068252;
+  outline-offset: 4px;
+}
 
-.who-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin: 0 auto;
-  max-width: 1200px;
-  /* padding: 0 20px; */
-  gap: 20px;
+.order-form textarea {
+  resize: none; 
+}
+
+select {
+  cursor: pointer;
+}
+
+.privacy-note {
+  font-size: 0.8rem;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.privacy-note a {
+  color: #ffffff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.privacy-note a:hover {
+  color: #12aa70;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .who-text {
@@ -475,16 +483,15 @@ textarea {
   border-bottom: #068252 solid 2px;
   padding: 20px;
   margin: 15px;
-  font-size: 1.2rem;
-  color: rgb(42, 41, 41);
-  line-height: 1.6;
+  background-color: rgba(243, 245, 243, 0.586);
+  border-radius: 10px;
 }
 
 
 .who-image {
   display: flex;
   gap: 20px;
-  /* padding: 0 20px; */
+  padding: 0 20px;
   width: 100%;
   max-width: 450px;
   height: auto;
@@ -517,14 +524,23 @@ textarea {
   outline-offset: 4px;
 }
 
-#who-we-are h2 {
-  font-size: 2.8rem;
-  font-family: "Oxanium", sans-serif;
+.learn-more {
   color: #000000;
-  margin-bottom: 25px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  border-bottom: 0.5px solid #000000;
 }
+
+.learn-more:hover {
+  color: #12aa70;
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+.learn-more:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease;
+ 
+}
+
 
 /* CONTACT */
 #contact {
@@ -718,7 +734,7 @@ footer {
 }
 
 .copyright {
-  color: #ffffff;
+  color: #fff;
   font-size: 0.8rem;
   margin-top: 10px;
   text-align: center;
@@ -726,17 +742,21 @@ footer {
 /* TERMS AND CONDITIONS */
 .terms {
   text-align: center;
+  line-height: 1.1rem;
+  font-size: 0.7rem;
 }
 .terms a {
   color: #ffffff;
-  text-decoration: none;
+  border-bottom: 0.5px solid #ffffff;
   transition: color 0.3s ease;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 100;
 }
 .terms a:hover {
   color: #12aa70;
   text-decoration: underline;
+  transition: color 0.3s ease;
+  border-bottom: 0.5px solid #12aa70;
 }
 
 /* OUR MISSION PAGE */
@@ -997,27 +1017,6 @@ footer {
   min-height: 70vh;
 }
 
-#who-we-are {
-  margin: 30px auto;
-  padding: 20px;
-  max-width: 1200px;
-  background-color: rgba(255, 255, 255, 0.684);
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  padding: 40px;
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: #000;
-  text-align: left;
-
-}
-
 
 
 :root {
@@ -1027,12 +1026,13 @@ footer {
 
 /* WHO WE ARE – ANGLED BOTTOM */
 #who-we-are {
-  background: linear-gradient(to right, #c4c1c1e2, #94a19887);
+  background: linear-gradient(to right, #c5d4cce2, #94a19887);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - var(--cut-soft)));
   padding: 60px 20px;
   margin-top: 0;
   position: relative;
   z-index: 1;
+  text-align: center;
 }
 
 /* INDIVIDUAL SERVICES – SLANTED TOP AND BOTTOM */
