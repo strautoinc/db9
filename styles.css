@@ -234,6 +234,7 @@ button {
 
 
 /* Modal Styles */
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -258,30 +259,71 @@ button {
   margin: 10px;
   border-radius: 10px;
   width: 90%;
-  max-width: 500px;
+  max-width: 700px;
   position: relative;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
   animation: fadeIn 0.3s ease;
 }
-
-/* .modal-content h2 {
+.modal-content h2 {
   margin-top: 0;
   font-weight: 600;
   font-size: 1.7rem;
   text-transform: uppercase;
-  color: rgb(224, 221, 221);
+  color: rgb(240, 235, 235);
   font-family: "Oxanium", sans-serif;
   text-align: center;
   margin-bottom: 20px;
-} */
+}
+.carrier-form, .dealer-form, .auction-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.form-row {
+  display: flex;
+  gap: 5px;
+}
+.form-row input {
+  flex: 1;
+}
+.form-row select {
+  flex: 1;
+}
+.checkbox-container {
+  align-items: left;
+  text-align: left;
+  font-size: 5px;
+  margin: 10px 0;
+  padding: 5px;
+}
 
-.carrier-form input,
-.carrier-form textarea {
+.carrier-form input, select,  
+.carrier-form textarea, 
+.dealer-form input, select,  
+.dealer-form textarea,
+.auction-form input, select,  
+.auction-form textarea{
   width: 90%;
   padding: 10px;
   margin-bottom: 12px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  background-color: #fefefe88;
+}
+.carrier-form input::placeholder,
+.carrier-form textarea::placeholder,
+.dealer-form input::placeholder,
+.dealer-form textarea::placeholder,
+.auction-form input::placeholder,
+.auction-form textarea::placeholder {
+  color: #222222c6;
+}
+
+.auction-form textarea,
+.dealer-form textarea,
+.carrier-form textarea {
+  width: 100%;
+  resize: none; 
 }
 
 
@@ -294,10 +336,120 @@ button {
   color: rgb(224, 221, 221);
   cursor: pointer;
 }
-
 .close-btn:hover {
   color: #2a2929;
 }
+.close-btn:active {
+  transform: scale(0.98);
+}
+
+
+
+/* INDIVIDUAL SERVICES SECTION */
+
+#individuals {
+  text-align: center;
+  background: linear-gradient(to bottom right, #5b5c5bae, #070807d0);
+  clip-path: polygon(0 var(--cut-deep), 100% 0, 100% calc(100% - var(--cut-soft)), 0 100%);
+  padding: 130px;
+  position: relative;
+  z-index: 2;
+}
+
+#individuals::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #5b5c5bae, #070807d0);
+  clip-path: polygon(0 var(--cut-deep), 100% 0, 100% calc(100% - var(--cut-soft)), 0 100%);
+  z-index: -1;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-item img {
+  max-width: 40%;
+  height: auto;
+  margin: 10px;
+}
+.service-item p {
+  color: #f1f1f1;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Partnerships Section */
+#partnerships {
+  background: linear-gradient(to right, #c5d4cce2, #94a19887);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - var(--cut-soft)));
+  padding: 60px 20px;
+  margin-top: 0;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+#partnerships::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #c5d4cce2, #94a19887);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - var(--cut-soft)));
+  z-index: -1;
+}
+
+.partnerships-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.partnership-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.partnership-image {
+  background: linear-gradient(to right, #101010b1, #266d4787);
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.partnership-item img {
+  max-width: 60%;
+  height: auto;
+  margin: 30px;
+}
+
+
 
 /* Simple animation */
 @keyframes fadeIn {
@@ -373,7 +525,7 @@ button {
   justify-content: center;
   text-align: center;
   margin: 0 auto;
-  min-width: 750px;
+  min-width: 820px;
   border-bottom: 1px solid #ffffff;
   border-top: 1px solid #ffffff;
   padding: 20px;
@@ -1358,6 +1510,38 @@ footer {
   border-radius: 6px;
   cursor: pointer;
 }
+
+.hero-section {
+  background-image: url('images/faqs-hero.jpeg');
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero-faqs {
+  max-width: 600px;
+  margin-top: 120px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
 
 
 @media screen and (max-width: 768px) {

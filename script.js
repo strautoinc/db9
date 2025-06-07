@@ -41,8 +41,10 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   };
 
+
+
   // Scroll to the top function
-  function scrollToTop() {
+function scrollToTop() {
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
   }
@@ -104,3 +106,23 @@ const openBtn = document.getElementById('open-quote-modal');
     sModal.style.display = 'none';
     sOverlay.style.display = 'none';
   });
+
+
+    // Dealer Modal
+    function toggleDealerForm() {
+        const modal = document.getElementById("dealerModal");
+        modal.classList.toggle("show");
+    }
+    function closeDealerForm() {
+        const modal = document.getElementById("dealerModal");
+        modal.classList.remove("show");
+    }
+    // Auction Modal
+    function toggleAuctionForm() {
+        const modal = document.getElementById("auctionModal");
+        modal.classList.toggle("show");
+    }
+    function closeAuctionForm() {
+        const modal = document.getElementById("auctionModal");
+        modal.classList.remove("show");
+    }
