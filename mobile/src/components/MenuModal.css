@@ -33,8 +33,9 @@
   background-color: transparent;
   border: none;
   box-shadow: none;
-  color: #e5F5E0;
-  font-size: 23px;
+  color: #dad8d8;
+  font-size: 28px;
+  font-weight: 100;
   cursor: pointer;
   transition: color 0.3s ease;
 }
@@ -63,6 +64,8 @@
     color: #e5F5E0;
     border: 1px solid #e5F5E0;
     border-radius: 15px;
+  padding: 10px;
+  
 }
 
 .menu-btn {
