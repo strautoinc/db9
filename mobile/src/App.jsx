@@ -20,7 +20,7 @@ export default function App() {
   const renderContent = () => {
     switch (activeScreen) {
       case 'welcome':
-        return <WelcomeScreen onStartQuote={() => handleNavigation('quote')} />;
+        return <WelcomeScreen onStartQuote={() => handleNavigation('quote')} onSignup={() => handleNavigation('carrier')} />;
       case 'quote':
         return <QuoteStepper />;
       case 'carrier':

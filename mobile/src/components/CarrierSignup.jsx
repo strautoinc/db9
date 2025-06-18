@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import StepCard from './StepCard';
 
-export default function CarrierSignupStepper() {
+export default function CarrierSignup() {
   const [currentStep, setCurrentStep] = useState(0);
   const [formData, setFormData] = useState({
     companyName: '', contactName: '', phone: '', email: '',

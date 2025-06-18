@@ -2,7 +2,17 @@ body, html {
   margin: 0;
   padding: 0;
   font-family:'GILL SANS', sans-serif;
-  background-color: #7b817d;
+  background-image: url('src/assets/iStock-1533878491.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  background-color: rgba(170, 166, 166, 0.711);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
   color: #f6fdf4;
 }
 
@@ -72,7 +82,7 @@ body, html {
   height: auto;
   max-width: 500px;
   margin: 0 auto;
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 
 button {
@@ -115,12 +125,16 @@ input {
   
 }
 .welcome-screen p {
+  background-color: #2a2e2c;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px rgba(160, 159, 159, 0.3);
   color: #ffffff;
   font-size: 1.1rem;
   font-weight: 100;
   line-height: 1.5;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   padding: 10px 20px;
+  margin-bottom: 30px ;
 }
 
 .step-card {
