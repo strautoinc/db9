@@ -4,13 +4,11 @@ import { VscHome } from "react-icons/vsc";
 import { MdContactPhone } from "react-icons/md";
 import { AiOutlineInfoCircle } from "react-icons/ai";
 import { FaRegHandshake } from "react-icons/fa";
-import { FaRegLightbulb } from "react-icons/fa";
 import { FaRegLifeRing } from "react-icons/fa";
 import { FaRegBuilding } from "react-icons/fa";
 import { FaRegQuestionCircle } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
-import { useState, useEffect } from "react";
-import { useTranslation } from "react-i18next";
+
 
 
 const menuItems = [

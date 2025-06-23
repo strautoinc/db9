@@ -10,7 +10,6 @@ body, html {
   background-blend-mode: overlay;
   background-color: rgba(170, 166, 166, 0.711);
   position: relative;
-  overflow: hidden;
   width: 100%;
   height: 100%;
   color: #f6fdf4;
@@ -60,7 +59,7 @@ body, html {
 }
 .contact-link:hover {
   text-decoration: underline;
-  color: #07b22c;
+  color: #0a9e2a;
 }
 
 .contact-icon {
@@ -68,7 +67,7 @@ body, html {
   height: 20px;
   margin-right: 10px;
   vertical-align: middle;
-  color: #40e40e;
+  color: #33ac0d;
   transition: color 0.3s ease;
 }
 .contact-icon:hover {
@@ -86,8 +85,8 @@ body, html {
 }
 
 button {
-  background-color: #a5f2b6;
-  color: #080808;
+  background-color: #f2faf4;
+  color: #000000;
   border: 2px solid #111211;
   box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.38);
   padding: 10px;
@@ -99,7 +98,9 @@ button {
 }
 
 button:hover {
-  background-color: #3F8F50;
+  background-color: #ffffff;
+  color: #000000;
+  transform: scale(1.1);
 }
 
 input {
@@ -114,6 +115,7 @@ input {
 .step-card {
   padding: 45px 20px;
   text-align: center;
+  margin-top: 75px;;
 }
 
 .welcome-screen h1 {
@@ -228,7 +230,6 @@ input {
   background-color: #1A2A1F;
   border: 1px solid #66bb6a;
   border-radius: 8px;
-  overflow-y: auto;
   font-size: 0.8rem;
   z-index: 1000;
   width: 100%;
@@ -416,9 +417,18 @@ input[type="checkbox"]:disabled::after {
   margin: 5px 0;
 }
 
+.about-image {
+  width: 100%;
+  max-width: 410px;
+  height: auto;
+  margin-top: 75px;
+  padding: 10px;;
+  display: block;
+}
+
 .about-container {
-  margin: 80px 20px;
-  padding: 10px 20px;
+  margin: 20px;
+  padding: 10px;
   background-color: #2a2e2c64;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -562,3 +572,80 @@ input[type="checkbox"]:disabled::after {
 .faq-item a:hover {
   text-decoration: underline;
 }
+
+.contact-image {
+  width: 100%;
+  max-width: 435px;
+  height: auto;
+  display: block;
+}
+
+.contact-image img {
+  width: 100%;
+  height: 455px;
+  object-fit: cover;
+  max-width: 435px;
+  margin: 0;
+}
+
+.contact-container {
+  padding: 10px;
+  background-color: #2a2e2c64;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+}
+
+.contact-container h2 {
+  color: #e6ece5;
+  text-align: center;
+}
+.contact-container p {
+  color: #f2f3f2;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.contact-container a {
+  color: #a5f2b6bd;
+  text-decoration: none;
+}
+.contact-container a:hover {
+  text-decoration: underline;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.contact-authority {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;;
+  padding: 10px;
+}
+
+.authority ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.authority li {
+  margin: 2px 0;
+  color: #f2f3f2;
+}
+
+

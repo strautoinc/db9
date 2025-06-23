@@ -1,20 +1,24 @@
 import React from "react";
 import fmcsa from "../assets/fm.png";
+import picture from "../assets/enclosed_car_shipping.webp";
 
 
 export default function About() {
   return (
-    <><><div className="about-container">
-      <h2>About Us</h2>
-      <p>We are a logistics company dedicated to providing top-notch services.</p>
+    <>
+    <div className="about-header">
+      <img src={picture} alt="About Us" className="about-image" />
+    </div>
+      <div className="about-container">
+        <h2>About Us</h2>
+        <p>We are a logistics company dedicated to providing top-notch services.</p>
 
-
-    <p>Our mission is to streamline supply chain operations and enhance efficiency for our clients.
-          </p>
-          <p>
-              We specialize in various logistics solutions, including transportation,
-              warehousing, and distribution.
-          </p>
+        <p>Our mission is to streamline supply chain operations and enhance efficiency for our clients.
+        </p>
+        <p>
+          We specialize in various logistics solutions, including transportation,
+          warehousing, and distribution.
+        </p>
           <p>
               Our team is committed to delivering exceptional service and building
               long-term partnerships with our clients.
@@ -30,7 +34,7 @@ export default function About() {
         <li><strong>Sustainability:</strong> We are committed to environmentally responsible practices.</li>
       </ul>
     </div>
-    </><div className="about-container">
+   <div className="about-container">
       <h2>Our Team</h2>
       <p>We have a diverse team of professionals with expertise in logistics and supply chain management.</p>
       <p>Our team members are dedicated to providing the best solutions for our clients.</p>
@@ -51,7 +55,7 @@ export default function About() {
       <p>Our FMCSA certification ensures compliance with industry standards and regulations.</p>
       <img src={fmcsa} alt="FMCSA Certification" className="fmcsa-logo" />
       <p>For more information about our certifications, please visit the FMCSA website.</p>
-      <p>For inquiries, please contact us at <a href="mailto:info@db9logistics.com">info@db9logistics.com</a>.</p>
+      <p>For inquiries, please contact us at <a href="mailto:info@db9logistics.com">info@db9logistics.com</a>.</p><br></br><br></br>
     </div>
     </>
   );
